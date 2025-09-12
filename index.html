@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mark's Data Converter</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1 class="title">Welcome to Mark's Data Converter</h1>
+		<p class="subtitle">Convert your data easily and efficiently.</p>
+
+		<div class="container">
+			<select name="from" id="from">
+				<option value="placeholder" disabled selected>Choose a starting number system:</option>
+				<option value="decimal">Decimal (Base10)</option>
+				<option value="binary">Binary (Base2)</option>
+				<option value="bcd">Binary Coded Decimal (BCD)</option>
+				<option value="hexadecimal">Hexadecimal (Base16)</option>
+				<option value="octal">Octal (Base8)</option>
+			</select>
+
+			<input type="text" id="inputValue" placeholder="Enter value to convert" />
+
+			<select name="to" id="to">
+				<option value="placeholder" disabled selected>Choose a target number system:</option>
+				<option value="decimal">Decimal (Base10)</option>
+				<option value="binary">Binary (Base2)</option>
+				<option value="bcd">Binary Coded Decimal (BCD)</option>
+				<option value="hexadecimal">Hexadecimal (Base16)</option>
+				<option value="octal">Octal (Base8)</option>
+			</select>
+
+			<p id="output"></p>
+
+			<!-- <button class="button disabled" id="convertButton">Convert</button> -->
+		</div>
+
+		<script type="module" src="script.js"></script>
+	</body>
+</html>

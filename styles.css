@@ -1,0 +1,141 @@
+body {
+	font-family: Arial, sans-serif;
+	background: #f4f6fa;
+	color: #222;
+	margin: 0;
+	padding: 0;
+}
+
+.title {
+	text-align: center;
+	color: #2a4d8f;
+	margin-top: 32px;
+	margin-bottom: 8px;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.subtitle {
+	text-align: center;
+	color: #4a6fa5;
+	margin-bottom: 24px;
+	font-size: 1.1rem;
+}
+
+.backButton {
+	display: block;
+	width: fit-content;
+	margin: 0 auto 24px auto;
+	text-decoration: none;
+}
+
+.backButton button {
+	background: #eaf0fb;
+	color: #2a4d8f;
+	border: 1px solid #bfcbe3;
+	border-radius: 6px;
+	padding: 8px 18px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.backButton button:hover {
+	background: #d3e0f7;
+}
+
+.container {
+	max-width: 480px;
+	margin: 0 auto 40px auto;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+	padding: 32px 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+label {
+	font-weight: 600;
+	margin-bottom: 6px;
+	color: #2a4d8f;
+}
+
+#inputValue,
+#output {
+	min-height: 22px;
+	height: auto;
+	padding: 10px;
+	border: 1px solid #bfcbe3;
+	border-radius: 6px;
+	font-size: 1rem;
+	background: #f8faff;
+	transition: border-color 0.2s;
+	color: #2a4d8f;
+	box-shadow: 0 1px 4px rgba(42, 77, 143, 0.07);
+}
+
+#inputValue:focus,
+#output:focus {
+	border-color: #2a4d8f;
+	outline: none;
+	background: #eaf0fb;
+}
+
+#output {
+	margin: 0px;
+}
+
+select {
+	padding: 10px;
+	border: 1.5px solid #4a6fa5;
+	border-radius: 20px;
+	font-size: 1rem;
+	background: linear-gradient(90deg, #eaf0fb 60%, #f8faff 100%);
+	color: #4a6fa5;
+	transition: border-color 0.2s, background 0.2s;
+	box-shadow: 0 1px 6px rgba(74, 111, 165, 0.09);
+}
+
+select:focus {
+	border-color: #2a4d8f;
+	background: #d3e0f7;
+	outline: none;
+}
+
+.button {
+	background: #2a4d8f;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	padding: 12px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.button:hover {
+	background: #1c3560;
+}
+
+.disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+	pointer-events: none;
+	background: #e0e6ef;
+	color: #8ca0c9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+	.container {
+		padding: 16px 8px;
+		max-width: 98vw;
+	}
+	.title {
+		font-size: 1.3rem;
+	}
+}
