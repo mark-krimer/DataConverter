@@ -56,24 +56,3 @@ function conversion() {
 inputValue.addEventListener("input", conversion);
 from.addEventListener("click", conversion);
 to.addEventListener("click", conversion);
-
-// Disabling button until valid state
-window.addEventListener("click", function () {
-	if (inputValue.value == "" || from.value == "placeholder" || to.value == "placeholder" || from.value == to.value) {
-		convertButton.classList.add("disabled");
-	} else {
-		convertButton.classList.remove("disabled");
-	}
-
-	conversion();
-});
-
-window.addEventListener("input", function () {
-	if (inputValue.value == "" || from.value == "placeholder" || to.value == "placeholder" || from.value == to.value) {
-		convertButton.classList.add("disabled");
-	} else {
-		convertButton.classList.remove("disabled");
-	}
-});
-
-// todo Fix BCD regex
